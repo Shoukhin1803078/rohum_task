@@ -161,7 +161,7 @@ if prompt := st.chat_input("Ask your research question..."):
         #             for word in words:
         #                 full_response += word + " "
         #                 message_placeholder.markdown(full_response + "▌")
-        #                 time.sleep(0.05)  # Adjust speed as needed
+        #                 time.sleep(0.05)  
                     
         #             message_placeholder.markdown(full_response)
         #             st.session_state.messages.append({"role": "assistant", "content": full_response})
@@ -179,17 +179,17 @@ if prompt := st.chat_input("Ask your research question..."):
         #             result = st.session_state.workflow.invoke(prompt)
         #             print(result)
                     
-        #             # Split by paragraphs to preserve markdown
+        #             
         #             paragraphs = result.split('\n')
         #             full_response = ""
                     
         #             for paragraph in paragraphs:
         #                 full_response += paragraph + "\n"
-        #                 # Ensure markdown is rendered correctly with the cursor
+        #                 
         #                 message_placeholder.markdown(full_response + "▌")
-        #                 time.sleep(0.1)  # Slightly longer delay for readability
+        #                 time.sleep(0.1)  
                     
-        #             # Final display without cursor
+        #             
         #             message_placeholder.markdown(full_response)
         #             st.session_state.messages.append({"role": "assistant", "content": full_response})
         #         except Exception as e:
